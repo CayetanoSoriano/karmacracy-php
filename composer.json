@@ -1,0 +1,22 @@
+{
+    "name": "cayetanosoriano/kcy",
+    "description": "PHP psr-0 API for karmacrazy",
+    "keywords": ["karmacracy", "kcy"],
+    "homepage": "https://github.com/CayetanoSoriano/karmacracy-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cayetano Soriano",
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+        "kriswallsmith/buzz" : "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "kcy": "lib/"
+        }
+    }
+}
