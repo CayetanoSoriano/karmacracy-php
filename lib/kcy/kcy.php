@@ -4,14 +4,13 @@ use Buzz\Browser;
 
 class kcy {
 
-	protected $user, $keypass, $appkey;
+	protected $username, $keypass, $appkey;
 	protected $browser;
 	protected $base_url;
 	protected $json_output;
 
-	function __construct($user = NULL, $keypass = NULL, $appkey = NULL){
+	function __construct($keypass = NULL, $appkey = NULL){
         $this->browser = new Browser();
-		$this->user = $user;
 		$this->keypass = $keypass;
 		$this->appkey = $appkey;
 		$this->base_url = 'http://karmacracy.com/api/v1/';
@@ -22,17 +21,6 @@ class kcy {
 	{
 		$this->base_url = $base_url;
 		return $this;
-	}
-
-	public function setUser($user)
-	{
-		$this->user = $user;
-		return $this;
-	}
-
-	public function getUser()
-	{
-		return $this->user;
 	}
 
 	public function setKeypass($keypass)
