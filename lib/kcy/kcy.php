@@ -4,12 +4,12 @@ use Buzz\Browser;
 
 class kcy {
 
-	protected $username, $keypass, $appkey;
+	protected $keypass, $appkey;
 	protected $browser;
 	protected $base_url;
 	protected $json_output;
 
-	function __construct($keypass = NULL, $appkey = NULL){
+	function __construct($keypass, $appkey){
         $this->browser = new Browser();
 		$this->keypass = $keypass;
 		$this->appkey = $appkey;
